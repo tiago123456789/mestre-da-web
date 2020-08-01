@@ -44,14 +44,12 @@ class StoreService {
         return product[0];
     }
 
-
     async createProduct(newProduct: { [key: string]: any }) {
         return this.productRepository.create(newProduct);
     }
  
     async deleteProduct(id: any) {
         await this.findProductById(id);
-        // Check if exist sales to the product
         return this.productRepository.delete(id);
     }
 

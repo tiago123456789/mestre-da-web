@@ -18,7 +18,7 @@ abstract class Repository {
             .select(columnsReturnedQuery);
     }
 
-    public findById(id: number) {
+    public findById(id: any): Promise<any> {
         return this.connection(this.table)
             .where({ id: id })
             .select("*");
