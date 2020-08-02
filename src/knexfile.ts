@@ -1,5 +1,5 @@
 import path from "path";
-require("./config/LoaderEnvironmentVariable");
+import "./config/LoaderEnvironmentVariable";
 
 module.exports = {
     client: 'mysql2',
