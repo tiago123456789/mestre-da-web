@@ -13,7 +13,7 @@ jest.mock("../../src/repositories/ProductRepository");
 jest.mock("../../src/repositories/OrderRepository");
 jest.mock("../../src/repositories/ClientRepository");
 
-describe("Unit tests class storeService", () => {
+describe("Unit tests class OrderService", () => {
 
     it("Should trigger exception when client not exist", async () => {
         try {

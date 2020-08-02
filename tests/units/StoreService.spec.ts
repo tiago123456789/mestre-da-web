@@ -7,7 +7,7 @@ jest.mock("../../src/repositories/StoreRepository");
 jest.mock("../../src/repositories/ProductRepository");
 
 
-describe("Unit tests class storeService", () => {
+describe("Unit tests class StoreService", () => {
 
     it("Should return 2 clients when method findAll called", async () => {
         const ProductRepositoryMocked = <jest.Mock<ProductRepository>>ProductRepository;

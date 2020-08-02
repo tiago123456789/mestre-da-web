@@ -2,7 +2,6 @@ import { NextFunction, Response, Request } from "express";
 
 export default (error: Error, request: Request, response: Response, next: NextFunction) => {
 
-    console.log(error);
     switch(error.name) {
         case "NotFoundException":
             return response.status(404).json({
