@@ -9,6 +9,7 @@ Rodar projeto em ambiente de desenvolvimento:
 ----------------------------------------------
 
 - Clonar projeto.
+- Importar o arquivo **postman_collection.json** no postman com as rotas para fazer teste.
 - Executar o comando: **npm install** para instalar as dependências do projeto.
 - Criar um arquivo chamado **.env** na raiz do diretório *server* usando o arquivo **.env.example** como base e altere as informações do arquivo **.env**.
 - Executar o comando: **npm run start:dev** esse comando irá criar os containers docker com redis e postgres é depois iniciar a aplicação.
